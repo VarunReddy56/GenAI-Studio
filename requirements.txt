@@ -1,8 +1,8 @@
 # Core
-streamlit==1.26.0
+streamlit
 python-dotenv
 validators
-Pillow==10.0.0
+# Pillow will be installed automatically as a dependency of streamlit
 
 # LangChain & OpenAI
 langchain
@@ -14,11 +14,3 @@ openai
 unstructured[html]
 youtube-transcript-api
 git+https://github.com/pytube/pytube
-
-# (Optional) Hugging Face + AI models
-# transformers==4.43.0
-# accelerate==0.23.0
-
-# Heavy models (disable if fails on Streamlit Cloud)
-# torch==2.2.0
-# diffusers==0.20.2
