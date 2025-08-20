@@ -1,0 +1,160 @@
+/* Global background */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #0ea5e9 100%) fixed;
+    color: #e5e7eb;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  }
+  
+  /* Glass container */
+  .container {
+    max-width: 980px;
+    margin: 32px auto;
+    padding: 24px;
+    border-radius: 20px;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  
+  /* Section title */
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 6px 0 18px 0;
+  }
+  
+  /* Mode header / title */
+  .app-title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    display: flex; gap: 8px; align-items: center;
+  }
+  
+  /* Chat area */
+  .chatbox {
+    max-height: 520px;
+    overflow-y: auto;
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(2, 6, 23, 0.45);
+  }
+  
+  /* Bubbles */
+  .bubble {
+    padding: 12px 14px;
+    margin: 8px 0;
+    border-radius: 14px;
+    max-width: 80%;
+    line-height: 1.45;
+    word-wrap: break-word;
+  }
+  
+  .bubble.user {
+    margin-left: auto;
+    background: rgba(14, 165, 233, 0.18);
+    border: 1px solid rgba(14,165,233,0.35);
+  }
+  
+  .bubble.ai {
+    margin-right: auto;
+    background: rgba(244, 114, 182, 0.14);
+    border: 1px solid rgba(244, 114, 182, 0.35);
+  }
+  
+  /* Chat row with avatar */
+  .chat-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .chat-row.right {
+    justify-content: flex-end;
+  }
+  
+  .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  
+  .meta {
+    font-size: 11px;
+    opacity: 0.8;
+    margin-top: 4px;
+  }
+  
+  /* Buttons */
+  .stButton > button {
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    color: #e5e7eb;
+  }
+  
+  /* Inputs */
+  .stTextInput > div > div > input,
+  .stTextArea > div > textarea {
+    border-radius: 12px !important;
+    background: rgba(2, 6, 23, 0.5) !important;
+    color: #e5e7eb !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+  }
+  
+  /* Radio spacing */
+  .stRadio > div { gap: 8px; }
+  
+  /* Typing indicator */
+  .typing {
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.06);
+    display: inline-block;
+    margin-top: 8px;
+  }
+  
+  .dot {
+    height: 6px; width: 6px;
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    animation: blink 1.4s infinite both;
+  }
+  
+  .dot:nth-child(2) { animation-delay: .2s; }
+  .dot:nth-child(3) { animation-delay: .4s; }
+  
+  @keyframes blink {
+    0% { opacity: .2; transform: translateY(0px); }
+    20% { opacity: 1; transform: translateY(-2px); }
+    100% { opacity: .2; transform: translateY(0px); }
+  }
+  
+  /* Card */
+  .card {
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  /* Gallery grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+  }
+  .grid img {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
