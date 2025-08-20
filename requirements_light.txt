@@ -8,3 +8,4 @@ youtube-transcript-api
 pytube
 python-dotenv
 Pillow==9.5.0
+openai==1.9.0
