@@ -50,7 +50,7 @@ load_css("style.css")
 # =========================
 # ---- API KEY HANDLING ---
 # =========================
-openai.api_key = "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"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 def require_key():
     return True
