@@ -8,16 +8,16 @@ Pillow==10.0.0
 langchain
 langchain-openai
 langchain-community
-openai==1.9.0
+openai
 
 # YouTube + URL parsing
 unstructured[html]
 youtube-transcript-api
-pytube
+git+https://github.com/pytube/pytube
 
 # (Optional) Hugging Face + AI models
-transformers==4.43.0
-accelerate==0.23.0
+# transformers==4.43.0
+# accelerate==0.23.0
 
 # Heavy models (disable if fails on Streamlit Cloud)
 # torch==2.2.0
