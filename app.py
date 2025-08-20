@@ -1,3 +1,22 @@
+import subprocess
+import sys
+
+# Ensure required packages are installed
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+try:
+    import openai
+except ImportError:
+    install("openai==1.9.0")
+    import openai
+
+
+
+
+
+
+
 import os
 import time
 import base64
